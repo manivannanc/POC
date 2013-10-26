@@ -5,6 +5,7 @@
     <script src="js/angular.min.js"></script>
     <script src="js/Profile.js" type="text/javascript"></script>
     <script src="js/ProfileList.js" type="text/javascript"></script>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js" type="text/javascript"></script>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
     <link href="css/bootstrap-min.css" rel="stylesheet" type="text/css"/>  
 
@@ -21,8 +22,8 @@
                 <td>Last name:</td><td><input type="text" ng-model="profileLastName"  size="50" ></td>
             </tr>
             <tr>
-                <td>Email :</td><td><input type="text" ng-model="profileEmail"  size="50" ></td>
-                <td>Mobile:</td><td><input type="text" ng-model="profileMobile"  size="50" ></td>
+                <td>Email :</td><td><input type="email" ng-model="profileEmail"  size="50" ></td>
+                <td>Mobile:</td><td><input type="tel" ng-model="profileMobile"  size="50" ></td>
             </tr>
          </table>       
       <div > Please search the list to check the newly added item <input class="btn-primary" type="submit" value="add"></div>

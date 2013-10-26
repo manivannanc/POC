@@ -3,16 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Express 2012 for Web
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ProfileList", "ProfileList\", "{283C83D6-995C-474A-AE85-95788010F972}"
 	ProjectSection(WebsiteProperties) = preProject
+		Frontpage = "false"
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
 		Debug.AspNetCompiler.VirtualPath = "/ProfileList"
-		Debug.AspNetCompiler.PhysicalPath = "..\..\..\..\..\..\Projects\GitHubRepository\POC\AngularJS\ProfileList\"
+		Debug.AspNetCompiler.PhysicalPath = "ProfileList\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\ProfileList\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.VirtualPath = "/ProfileList"
-		Release.AspNetCompiler.PhysicalPath = "..\..\..\..\..\..\Projects\GitHubRepository\POC\AngularJS\ProfileList\"
+		Release.AspNetCompiler.PhysicalPath = "ProfileList\"
 		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\ProfileList\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
@@ -20,14 +21,26 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ProfileList", "ProfileList\
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "57683"
 	EndProjectSection
+	ProjectSection(ProjectDependencies) = postProject
+		{29D28642-677A-4A95-B60F-55045A33AA19} = {29D28642-677A-4A95-B60F-55045A33AA19}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProfileAPI", "ProfileAPI\ProfileAPI.csproj", "{29D28642-677A-4A95-B60F-55045A33AA19}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{283C83D6-995C-474A-AE85-95788010F972}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{283C83D6-995C-474A-AE85-95788010F972}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{283C83D6-995C-474A-AE85-95788010F972}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{283C83D6-995C-474A-AE85-95788010F972}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{29D28642-677A-4A95-B60F-55045A33AA19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29D28642-677A-4A95-B60F-55045A33AA19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29D28642-677A-4A95-B60F-55045A33AA19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29D28642-677A-4A95-B60F-55045A33AA19}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
